@@ -2580,63 +2580,6 @@ return (
                         className={`${inputClasses} resize-none`}
                         rows={2}
                       />
-
-                      {/* Estatísticas inline - Modernizadas */}
-                      <div className="grid grid-cols-3 gap-4 mt-2">
-                        {/* Cartas Únicas */}
-                        <div className="relative group">
-                          <div className="bg-gradient-to-br from-emerald-500/20 via-emerald-500/10 to-transparent p-4 rounded-xl border border-emerald-500/20 backdrop-blur-sm transition-all duration-300 hover:border-emerald-500/40 hover:shadow-lg hover:shadow-emerald-500/10">
-                            <div className="flex items-center gap-3">
-                              <div className="p-2 bg-emerald-500/20 rounded-lg border border-emerald-500/30">
-                                <svg className="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5H9m12 0v12a4 4 0 01-4 4H9" />
-                                </svg>
-                              </div>
-                              <div className="flex-1">
-                                <div className="text-2xl font-bold text-emerald-400 mb-1">{dashboardStats.uniqueCards}</div>
-                                <div className="text-xs font-medium text-gray-400 uppercase tracking-wider">Cartas Únicas</div>
-                              </div>
-                            </div>
-                            <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                          </div>
-                        </div>
-
-                        {/* Total de Cópias */}
-                        <div className="relative group">
-                          <div className="bg-gradient-to-br from-blue-500/20 via-blue-500/10 to-transparent p-4 rounded-xl border border-blue-500/20 backdrop-blur-sm transition-all duration-300 hover:border-blue-500/40 hover:shadow-lg hover:shadow-blue-500/10">
-                            <div className="flex items-center gap-3">
-                              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
-                                <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                                </svg>
-                              </div>
-                              <div className="flex-1">
-                                <div className="text-2xl font-bold text-blue-400 mb-1">{dashboardStats.totalCopies}</div>
-                                <div className="text-xs font-medium text-gray-400 uppercase tracking-wider">Total de Cópias</div>
-                              </div>
-                            </div>
-                            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                          </div>
-                        </div>
-
-                        {/* Valor Total */}
-                        <div className="relative group">
-                          <div className="bg-gradient-to-br from-yellow-500/20 via-yellow-500/10 to-transparent p-4 rounded-xl border border-yellow-500/20 backdrop-blur-sm transition-all duration-300 hover:border-yellow-500/40 hover:shadow-lg hover:shadow-yellow-500/10">
-                            <div className="flex items-center gap-3">
-                              <div className="p-2 bg-yellow-500/20 rounded-lg border border-yellow-500/30">
-                                <svg className="w-5 h-5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                                </svg>
-                              </div>
-                              <div className="flex-1">
-                                <div className="text-2xl font-bold text-yellow-400 mb-1">R$ {dashboardStats.totalValue.toFixed(0)}</div>
-                                <div className="text-xs font-medium text-gray-400 uppercase tracking-wider">Valor Total</div>
-                              </div>
-                            </div>
-                            <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                          </div>
-                        </div>
-                      </div>
                     </div>
 
                     {/* Lado direito - Ações */}
